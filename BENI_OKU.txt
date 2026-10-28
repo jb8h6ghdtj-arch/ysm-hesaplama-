@@ -1,0 +1,30 @@
+YSM HESAPLAMA – ANDROID UYGULAMASI
+==================================
+
+Bu klasör hazır bir Android Studio projesidir (Capacitor 6).
+Uygulamanın tamamı www/ klasöründedir; internet olmadan çalışır.
+
+APK OLUŞTURMA (bir kerelik kurulum + 2 tıklama)
+1) Android Studio'yu kurun: https://developer.android.com/studio (ücretsiz).
+2) Bu ZIP'i bir klasöre açın.
+3) Android Studio > Open > bu klasördeki "android" klasörünü seçin.
+4) İlk açılışta "Gradle sync" otomatik başlar (internet gerekir, birkaç dakika sürer).
+5) Menü: Build > Build App Bundle(s) / APK(s) > Build APK(s)
+6) Bitince sağ altta "locate" bağlantısı çıkar. APK dosyası:
+   android/app/build/outputs/apk/debug/app-debug.apk
+
+TELEFONA KURMA
+- APK'yı telefona gönderin (WhatsApp, e-posta, USB). Açınca Android "bilinmeyen kaynaklardan
+  yüklemeye izin ver" diye sorar; izin verip kurun. Ana ekranda "YSM Hesaplama" ikonu çıkar.
+
+PLAY STORE (isteğe bağlı)
+- Build > Generate Signed Bundle / APK > Android App Bundle ile imzalı .aab üretin.
+- Google Play geliştirici hesabı tek seferlik 25 USD'dir.
+
+UYGULAMA BİLGİLERİ
+- Uygulama adı: YSM Hesaplama   - Paket: com.ysmyapimarket.hesaplama   - Sürüm: 1.0
+- WhatsApp'ta gönder: görsel/PDF dosya olarak Android paylaş menüsüne eklenir, WhatsApp seçilir.
+
+GÜNCELLEME
+- www/index.html değişirse proje klasöründe:  npm install  ve  npx cap sync android
+  sonra Android Studio'da tekrar Build APK.

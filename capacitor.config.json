@@ -1,0 +1,6 @@
+{
+  "appId": "com.ysmyapimarket.hesaplama",
+  "appName": "YSM Hesaplama",
+  "webDir": "www",
+  "android": { "backgroundColor": "#A3302F" }
+}
